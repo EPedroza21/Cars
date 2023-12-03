@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/dimen12dp">
+
+    <ImageView
+        android:id="@+id/car_image_view_holder"
+        android:layout_width="@dimen/dimen140dp"
+        android:layout_height="@dimen/dimen160dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/car_image_view_holder"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text= "Series 3"
+        android:gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/car_manufacturer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/car_image_view_holder"
+        app:layout_constraintTop_toBottomOf="@id/car_name"
+        tools:text= "BMW"
+        android:gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/car_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/car_image_view_holder"
+        app:layout_constraintTop_toBottomOf="@+id/car_manufacturer"
+        tools:text= "2006"
+        android:gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/car_model"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/car_image_view_holder"
+        app:layout_constraintTop_toBottomOf="@+id/car_year"
+        tools:text= "Models"
+        android:gravity="center">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
