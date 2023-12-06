@@ -5,6 +5,7 @@ data class Car(
     val name: String,
     val manufacturer: String,
     val year: Int,
+    val photo: String,
     val model: List<Models>
 )
 
